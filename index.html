@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oyin Portfolio 2</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+ <style>
+  body{
+    font-family:'Poppins',sans-serif;
+}
+
+.hero-title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(3.5rem,10vw,8rem);
+    line-height:0.95;
+    font-weight:600;
+    letter-spacing:-2px;
+}
+
+.section-title{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(2.5rem,6vw,4.5rem);
+    line-height:1;
+    font-weight:600;
+}
+
+  </style>
+
+  <!-- TOP HEADER IMAGE WITH FADE -->
+ <div class="relative w-full h-[140px] sm:h-[180px] md:h-[240px] overflow-hidden">
+  <img 
+    src="images/header-bg.jpg" 
+    class="w-full h-full object-cover"
+  />
+
+  <!-- Fade overlay -->
+  <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-b from-transparent to-[#dfeaf6]"></div>
+ </div>
+  
+
+</head>
+
+<body class="bg-[#dfeaf6] text-[#355d9b] overflow-x-hidden">
+
+  <!-- HERO SECTION -->
+  <section class="relative px-6 pt-14 pb-20 text-center">
+
+    <h2 class="text-3xl md:text-6xl font-light text-[#2f4f85]">
+      Welcome to
+    </h2>
+
+    <h1 class="hero-title text-[#568DE1] text-center">
+       the Little Corner <br>of My World
+     </h1>
+
+    <div class="mt-10 flex flex-wrap justify-center gap-3 text-sm">
+      <div class="bg-[#4b8ddb] text-white px-5 py-2 rounded-full">Engineer/designer in progress</div>
+      <div class="bg-[#4b8ddb] text-white px-5 py-2 rounded-full">Curious mind</div>
+      <div class="bg-[#4b8ddb] text-white px-5 py-2 rounded-full">Creator of ideas</div>
+    </div>
+
+    <div class="mt-14 text-[#355d9b] text-sm animate-bounce">Scroll down ↓</div>
+  </section>
+
+  <!-- WHO IS OYIN -->
+  <section class="px-5 pb-20">
+    <div class="bg-[#edf4ff] rounded-[35px] p-6 md:p-10 shadow-md max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+
+        <div class="relative">
+          <div class="bg-white p-4 rounded-xl shadow-lg rotate-[-4deg] w-fit mx-auto">
+            <img src="images/mee-again.jpeg" alt="Oyin portrait" class="rounded-lg w-[320px] object-cover" />
+            <p class="mt-3 text-center text-sm italic text-[#355d9b]">
+              Always learning, Always growing :)
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="section-title mb-5 text-[#355d9b]">Who is Oyin?</h2>
+
+          <p class="leading-8 text-lg text-[#46679e] mb-8" style="text-align: justify;">
+            I am a curious and determined person who enjoys understanding how things work and finding ways to make ideas real. I enjoy challenges, learning new things and creating ideas that can make a positive impact.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+            <div class="bg-[#dcecff] p-5 rounded-3xl shadow-sm">
+              <h3 class="text-xl mb-3 text-[#355d9b] font-semibold">Curious by nature</h3>
+              <p class="text-[#4d6e9f] leading-7" >
+                I enjoy researching, asking questions and exploring how things work behind the scenes.
+              </p>
+            </div>
+
+            <div class="bg-[#dcecff] p-5 rounded-3xl shadow-sm">
+              <h3 class="text-xl mb-3 text-[#355d9b] font-semibold">Challenge driven</h3>
+              <p class="text-[#4d6e9f] leading-7">
+                I enjoy stepping outside my comfort zone and learning through experience.
+              </p>
+            </div>
+
+            <div class="bg-[#dcecff] p-5 rounded-3xl shadow-sm">
+              <h3 class="text-xl mb-3 text-[#355d9b] font-semibold">Creative thinker</h3>
+              <p class="text-[#4d6e9f] leading-7">
+                From sketches to Revit concepts, creativity has always been part of how I think.
+              </p>
+            </div>
+
+            <div class="bg-[#dcecff] p-5 rounded-3xl shadow-sm">
+              <h3 class="text-xl mb-3 text-[#355d9b] font-semibold">People first</h3>
+              <p class="text-[#4d6e9f] leading-7">
+                I care deeply about impact, inclusion and making sure no one feels left behind.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section class="px-5 pb-20">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="section-title mb-5 text-[#355d9b]">
+        My journey so far
+      </h2>
+
+      <div class="relative border-l-4 border-[#7ba9eb] ml-4 space-y-14">
+
+        <!-- Robotics Competition (NEW FIRST ITEM) -->
+        <div class="relative ml-10">
+          <div class="absolute -left-[52px] top-10 w-6 h-6 rounded-full bg-[#4b8ddb] border-4 border-[#dfeaf6]"></div>
+
+          <div class="bg-[#edf4ff] rounded-[30px] shadow-md p-5 grid md:grid-cols-2 gap-5 items-center">
+            <img src="images/robotics.jpg" class="rounded-2xl w-full h-[240px] object-cover" />
+            <div>
+              <h3 class="text-3xl mb-4 text-[#355d9b] font-semibold">Robotics Competition</h3>
+              <p class="text-[#4d6e9f] leading-8 text-lg">
+                One of my earliest experiences with teamwork, leadership and technology. As team leader, I coordinated our robotics team to 2nd place in a national competition in Nigeria.
+              </p>
+            </div>
+          </div>
+        </div>
+
+         <!-- Moving to the UK-->
+        <div class="relative ml-10">
+          <div class="absolute -left-[52px] top-10 w-6 h-6 rounded-full bg-[#4b8ddb] border-4 border-[#dfeaf6]"></div>
+
+          <div class="bg-[#edf4ff] rounded-[30px] shadow-md p-5 grid md:grid-cols-2 gap-5 items-center">
+            <div class="w-full h-[340px] rounded-[30px] overflow-hidden">
+    
+          <img 
+           src="images/moving.jpg"
+           class="w-full h-full object-cover object-top" />
+
+            </div>
+            <div>
+              <h3 class="text-3xl mb-4 text-[#355d9b] font-semibold">Moving to the UK</h3>
+              <p class="text-[#4d6e9f] leading-8 text-lg">
+                A completely new environment that pushed me to adapt, grow and explore new opportunities in engineering and design.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Discovering construction -->
+        <div class="relative ml-10">
+          <div class="absolute -left-[52px] top-10 w-6 h-6 rounded-full bg-[#4b8ddb] border-4 border-[#dfeaf6]"></div>
+
+          <div class="bg-[#edf4ff] rounded-[30px] shadow-md p-5 grid md:grid-cols-2 gap-5 items-center">
+            <img src="images/D-construction.jpeg" class="rounded-2xl w-full h-[240px] object-cover" />
+            <div>
+              <h3 class="text-3xl mb-4 text-[#355d9b] font-semibold">Discovering construction</h3>
+              <p class="text-[#4d6e9f] leading-8 text-lg">
+                Started exploring how design, planning and engineering come together to shape real spaces.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site engineering placement -->
+        <div class="relative ml-10">
+          <div class="absolute -left-[52px] top-10 w-6 h-6 rounded-full bg-[#4b8ddb] border-4 border-[#dfeaf6]"></div>
+
+          <div class="bg-[#edf4ff] rounded-[30px] shadow-md p-5 grid md:grid-cols-2 gap-5 items-center">
+            <img src="images/total-station.jpeg" class="rounded-2xl w-full h-[240px] object-cover" />
+            <div>
+              <h3 class="text-3xl mb-4 text-[#355d9b] font-semibold">Site engineering placement</h3>
+              <p class="text-[#4d6e9f] leading-8 text-lg">
+                Worked alongside professionals on a live construction project and learned how site engineering works in practice.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Morgan Sindall -->
+        <div class="relative ml-10">
+          <div class="absolute -left-[52px] top-10 w-6 h-6 rounded-full bg-[#4b8ddb] border-4 border-[#dfeaf6]"></div>
+
+          <div class="bg-[#edf4ff] rounded-[30px] shadow-md p-5 grid md:grid-cols-2 gap-5 items-center">
+            <img src="images/placement-img.jpeg" class="rounded-2xl w-full h-[240px] object-cover" />
+            <div>
+              <h3 class="text-3xl mb-4 text-[#355d9b] font-semibold">Morgan Sindall Future Academy</h3>
+              <p class="text-[#4d6e9f] leading-8 text-lg">
+                Gained insight into different departments and experienced how collaboration drives projects forward.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Networking -->
+        <div class="relative ml-10">
+          <div class="absolute -left-[52px] top-10 w-6 h-6 rounded-full bg-[#4b8ddb] border-4 border-[#dfeaf6]"></div>
+
+          <div class="bg-[#edf4ff] rounded-[30px] shadow-md p-5 grid md:grid-cols-2 gap-5 items-center">
+            <img src="images/networking.jpg" class="rounded-2xl w-full h-[240px] object-cover" />
+            <div>
+              <h3 class="text-3xl mb-4 text-[#355d9b] font-semibold">Networking & industry events</h3>
+              <p class="text-[#4d6e9f] leading-8 text-lg">
+                Connected with industry professionals through events and conversations that expanded my perspective.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+<section class="px-5 pb-20">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="section-title text-center mb-5 text-[#355d9b]">
+      Featured Projects
+    </h2>
+
+    <!-- CAROUSEL WRAPPER -->
+    <div id="projectCarousel" class="relative overflow-hidden">
+
+      <!-- SLIDES CONTAINER -->
+      <div class="flex transition-transform duration-500 ease-in-out" id="carouselSlides">
+
+        <!-- SLIDE 1 -->
+        <div class="min-w-full grid md:grid-cols-2 gap-8 px-2">
+          <!-- Project 1 -->
+         <div class="bg-[#edf4ff] rounded-[30px] overflow-hidden shadow-md">
+          <img src="images/knw.png" class="w-full h-[240px] object-cover" />
+          <div class="p-6">
+            <h3 class="text-2xl mb-3 text-[#355d9b] font-semibold">SEND Knowledge Quad</h3>
+            <p class="text-[#4d6e9f] leading-7 mb-5">
+              An inclusive and accessible design focused on creating welcoming learning spaces for SEND users.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Accessibility</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Revit</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Inclusive Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-[#edf4ff] rounded-[30px] overflow-hidden shadow-md">
+          <img src="images/space-zero.png" class="w-full h-[240px] object-cover" />
+          <div class="p-6">
+            <h3 class="text-2xl mb-3 text-[#355d9b] font-semibold">Space Zero Interior Design</h3>
+            <p class="text-[#4d6e9f] leading-7 mb-5">
+              Worked on interior and furniture layouts focused on comfort, usability and collaborative learning environments.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Interior Design</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Layout</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Spatial Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-[#edf4ff] rounded-[30px] overflow-hidden shadow-md">
+          <img src="images/revit-design-2.png" class="w-full h-[310px] object-cover" />
+          <div class="p-6">
+            <h3 class="text-2xl mb-3 text-[#355d9b] font-semibold">Technical Revit Work</h3>
+            <p class="text-[#4d6e9f] leading-7 mb-5">
+              Architectural revit design including a 3D model, floor plan, roof plan and elevation, showing spatial planning and visual presentation skills.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Revit</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">CAD</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Technical Drawing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="bg-[#edf4ff] rounded-[30px] overflow-hidden shadow-md">
+          <img src="images/site-plan-2.jpeg" class="w-full h-[310px] object-cover" />
+          <div class="p-6">
+            <h3 class="text-2xl mb-3 text-[#355d9b] font-semibold">Site Planning Concepts</h3>
+            <p class="text-[#4d6e9f] leading-7 mb-5">
+              Explored planning, circulation and layout concepts through technical drawings and site-based thinking.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Planning</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Design</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Construction</span>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="min-w-full grid md:grid-cols-2 gap-8 px-2">
+          <!-- Project 1 -->
+         <div class="bg-[#edf4ff] rounded-[30px] overflow-hidden shadow-md">
+           <img src="images/gantt-chatt-1.png" class="w-full h-[280px] object-contain" />
+           <div class="p-6">
+            <h3 class="text-2xl mb-3 text-[#355d9b] font-semibold">Construction planning programme of a school</h3>
+            <p class="text-[#4d6e9f] leading-7 mb-5">
+              A full construction programme showing the sequence, duration and dependencies of key tasks from site preparation to final handover.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Project planning</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Construction management</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Gantt scheduling</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-[#edf4ff] rounded-[30px] overflow-hidden shadow-md">
+          <img src="images/r-reatining wall.png" class="w-full h-[280px] object-cover" />
+          <div class="p-6">
+            <h3 class="text-2xl mb-3 text-[#355d9b] font-semibold">Structural retaining wall Design</h3>
+            <p class="text-[#4d6e9f] leading-7 mb-5">
+              A reinforced concrete retaining wall design showing dimensions, reinforcement and stability considerations through both 2D drawings and a 3D model.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Structural Design</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">3D modelling</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Civil</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-[#edf4ff] rounded-[30px] overflow-hidden shadow-md">
+          <img src="images/site-plan.png" class="w-full h-auto object-contain" />
+          <div class="p-6">
+            <h3 class="text-2xl mb-3 text-[#355d9b] font-semibold">Technical Revit Work</h3>
+            <p class="text-[#4d6e9f] leading-7 mb-5">
+              Produced layouts, plans and visual concepts using Revit and CAD software during projects and coursework.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Revit</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">CAD</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Technical Drawing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="bg-[#edf4ff] rounded-[30px] overflow-hidden shadow-md">
+          <img src="images/risk-assessment-design.png" class="w-full h-auto object-contain" />
+          <div class="p-6">
+            <h3 class="text-2xl mb-3 text-[#355d9b] font-semibold">Health and Safety Awareness</h3>
+            <p class="text-[#4d6e9f] leading-7 mb-5">
+              Risk Assessment for a SUDs scheme, analysing hazards linked to drainage design, excavation, concrete works, aggregate compaction and equipment vibration. 
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Planning</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Design</span>
+              <span class="bg-[#4b8ddb] text-white px-4 py-2 rounded-full text-sm">Construction</span>
+            </div>
+          </div>
+         </div>
+
+         </div>
+          
+        
+
+          </div> <!-- END OF #carouselSlides -->
+
+          <!-- DOTS -->
+            <div class="flex justify-center mt-8 space-x-3 text-3xl text-[#355d9b]">
+                <span class="dot cursor-pointer" data-slide="0">●</span>
+                   <span class="dot cursor-pointer opacity-40" data-slide="1">●</span>
+              </div>
+</div> <!-- END OF #projectCarousel -->
+
+
+  <!-- HOBBIES -->
+  <section class="px-5 pb-20">
+    <div class="max-w-5xl mx-auto bg-[#edf4ff] rounded-[30px] p-8 shadow-md">
+      <h2 class="section-title text-center mb-5 text-[#355d9b]">
+        Outside Engineering...
+      </h2>
+
+      <div class="grid md:grid-cols-5 gap-4 text-center">
+
+        <div class="bg-[#dcecff] rounded-[25px] p-6 shadow-sm">
+          <div class="text-5xl mb-4">🍳</div>
+          <h3 class="text-xl text-[#355d9b] font-semibold">Cooking</h3>
+        </div>
+
+        <div class="bg-[#dcecff] rounded-[25px] p-6 shadow-sm">
+          <div class="text-5xl mb-4">🛼</div>
+          <h3 class="text-xl text-[#355d9b] font-semibold">Rollerblading</h3>
+        </div>
+
+        <div class="bg-[#dcecff] rounded-[25px] p-6 shadow-sm">
+          <div class="text-5xl mb-4">🏓</div>
+          <h3 class="text-xl text-[#355d9b] font-semibold">Table Tennis</h3>
+        </div>
+
+        <div class="bg-[#dcecff] rounded-[25px] p-6 shadow-sm">
+          <div class="text-5xl mb-4">🎬</div>
+          <h3 class="text-xl text-[#355d9b] font-semibold">Animated movies</h3>
+        </div>
+
+        <div class="bg-[#dcecff] rounded-[25px] p-6 shadow-sm">
+          <div class="text-5xl mb-4">👨🏻‍💻</div>
+          <h3 class="text-xl text-[#355d9b] font-semibold">Web development</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE -->
+  <section class="px-5 pb-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="section-title text-center mb-5 text-[#355d9b]">
+        The Value I Bring
+      </h2>
+
+      <p class="text-xl leading-10 text-[#46679e]" style="text-align: justify;">
+        I am driven by relentless curiosity and a commitment to continuous growth. I thrive in collaborative environments, asking the right questions to uncover more effective, innovative ways to solve problems. Whether I am navigating technical challenges, refining a design, or strategising with a team, my guiding philosophy is simple: always leave things better than I found them.
+      </p>
+    </div>
+  </section>
+
+  <!-- ASPIRATIONS -->
+  <section class="px-5 pb-20">
+    <div class="max-w-5xl mx-auto bg-[#4b8ddb] text-white rounded-[35px] p-10 text-center">
+      <h2 class="section-title mb-5 text-[#edf4ff]">What is Next?</h2>
+
+      <p class="text-lg leading-9 max-w-3xl mx-auto" style="text-align: justify;">
+        I am currently looking for a Level 4 apprenticeship in Civil Engineering within the built environment. Unlike many people my age, university is not a straightforward option for me. As a non-UK citizen, I am not eligible for student finance, and the international tuition fees make full‑time university impossible for me at this time.
+
+That is why a Level 4 apprenticeship is not just a preference for me, it is the only realistic route for me to continue my journey in the Built Environment. I am determined to build a career through hard work, learning on the job, and proving myself in a real working environment.
+
+This digital profile is my way of showing who I am beyond an application form. I am ready to learn, ready to contribute, and hoping to connect with an employer who sees potential in me and is willing to give me the opportunity to grow.
+      </p>
+    </div>
+  </section>
+
+   <!-- CONTACT -->
+<section class="px-5 pb-24">
+  <div class="max-w-6xl mx-auto bg-[#edf4ff] rounded-[35px] p-8 shadow-md">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+
+      <!-- Left side text -->
+      <div>
+        <h2 class="section-title mb-5 text-[#355d9b]">
+          Let’s connect 
+        </h2>
+
+        <p class="text-lg leading-8 text-[#46679e] mb-6">
+          Feel free to reach out, connect or even leave a feedback.  I am
+          always open to conversations, opportunities and learning
+          from new people.
+        </p>
+
+        <div class="space-y-4 text-[#355d9b] text-lg">
+          <p>📧 oyinolowo02@gmail.com</p>
+          <p>📱 07448 997 497</p>
+          <p>🔗 linkedin.com/in/oyinlola-olowonjoyin</p>
+        </div>
+      </div>
+
+      <!-- CV BUTTON -->
+<div class="flex justify-center">
+
+  <a 
+    href="files/Oyin_Final_Template_CV.pdf"
+    target="_blank"
+    class="bg-white p-6 rounded-2xl shadow-lg text-center rotate-[-3deg] hover:rotate-0 hover:scale-105 transition duration-300 w-[260px]"
+  >
+
+    <div class="text-6xl mb-4">
+      <img
+            src="images/My-cv.jpeg"
+            alt="QR Code"
+            class="w-[220px] rounded-xl"
+          />
+    </div>
+
+    <p
+      class="mt-2 text-3xl text-[#355d9b] font-semibold"
+      style="font-family: 'Sora', sans-serif;"
+    >
+      View My CV
+    </p>
+
+    <p class="text-sm text-[#6b89b6] mt-2">
+      Click to open PDF
+    </p>
+
+  </a>
+
+</div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const slides = document.getElementById("carouselSlides");
+  const dots = document.querySelectorAll(".dot");
+  let currentSlide = 0;
+
+  function goToSlide(n) {
+    currentSlide = n;
+    slides.style.transform = `translateX(-${n * 100}%)`;
+
+    dots.forEach((dot, i) => {
+      dot.style.opacity = i === n ? "1" : "0.4";
+    });
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener("click", () => {
+      goToSlide(parseInt(dot.dataset.slide));
+    });
+  });
+
+  /* MOBILE SWIPE SUPPORT */
+  let startX = 0;
+
+  slides.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+  });
+
+  slides.addEventListener("touchend", e => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50 && currentSlide < dots.length - 1) {
+      goToSlide(currentSlide + 1);
+    }
+    if (endX - startX > 50 && currentSlide > 0) {
+      goToSlide(currentSlide - 1);
+    }
+  });
+</script>
+
+</body>
+</html>
